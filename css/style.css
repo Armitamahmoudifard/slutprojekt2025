@@ -19,6 +19,35 @@ header{
     background-color: rgb(49, 173, 132);
 }
 
+.h1{
+    padding: 10px;
+   
+}
+
+a{
+    color: black;
+    text-decoration: dashed;
+}
+
+.hd{
+    border: 2px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+.hd div{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(49, 173, 132);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+}
+
+
 nav{
     grid-area: nv;
     background-color: rgb(245, 224, 199);

@@ -1,1 +1,35 @@
-/* STILMALL */
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'sec sec sec sec'
+    'ft ft ft ft';
+    margin: auto;
+    background-color: rgb(54, 202, 153);
+    padding: 5px;
+    gap: 5px;
+}
+
+
+header{
+    grid-area: hd;
+    background-color: rgb(49, 173, 132);
+}
+
+nav{
+    grid-area: nv;
+    background-color: rgb(245, 224, 199);
+}
+
+section{
+    grid-area: sec;
+    background-color: rgb(245, 224, 199);
+}
+
+footer{
+    grid-area: ft;
+    background-color: rgb(245, 224, 199);
+}

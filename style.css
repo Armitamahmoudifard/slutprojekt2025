@@ -1,7 +1,7 @@
 #container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 1.5fr 1fr 1fr ;
+    grid-template-rows: auto;
     grid-template-areas: 
     'hd hd hd hd'
     'nv nv nv nv'
@@ -30,7 +30,7 @@ a{
 }
 
 .hd{
-    border: 5px;
+    border: 2px;
     display: flex;
     align-items: center;
     font-size: 25px;
@@ -41,7 +41,7 @@ a{
     width: 300px;
     height: 50px;
     background-color: rgb(49, 173, 132);
-    border-radius: 8px;
+    border-radius: 5px;
     text-align: center;
     line-height: 50px;
     color: black;
@@ -62,27 +62,3 @@ footer{
     grid-area: ft;
     background-color: rgb(245, 224, 199);
 }
-
-#nv{
-    background-image: url('../foodimage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#frame{
-    width:450px;
-    height: 8%;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    background-color: #d2bebe;
-    font-size: 15px;
-    resize: none;
-    background-color: rgb(255, 255, 255);
-
-}
-
-

@@ -86,3 +86,49 @@ footer{
 }
 
 
+.card{
+    background-color: aliceblue;
+    border: 1px solid ;
+    border-radius: 5px;
+    margin: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 2px 5px black;
+}
+
+
+.card img{
+    height: 100px;
+    width: 100px;
+    border-bottom: 1px solid black ;
+    padding-bottom: 15px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card button{
+    background-color: rgb(133, 143, 140);
+    color: #000000;
+    border: none;
+    padding: 10px 20px ;
+    border-radius: 3px;
+    font-size: 15px;
+
+}
+
+.card button:hover{
+    background-color: rgb(50, 171, 141);
+}
+
+.recept{
+margin: 0;
+padding: 15px;
+gap: 5px;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}

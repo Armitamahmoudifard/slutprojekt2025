@@ -1,7 +1,7 @@
 #container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 1.5fr 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr 1fr ;
     grid-template-areas: 
     'hd hd hd hd'
     'nv nv nv nv'
@@ -9,7 +9,7 @@
     'ft ft ft ft';
     margin: auto;
     background-color: rgb(54, 202, 153);
-    padding: 5px;
+    padding: px;
     gap: 5px;
 }
 
@@ -27,6 +27,9 @@ header{
 a{
     color: black;
     text-decoration: dashed;
+}
+a:hover{
+    color: aliceblue;
 }
 
 .hd{
@@ -55,7 +58,7 @@ nav{
 
 section{
     grid-area: sec;
-    background-color: rgb(245, 224, 199);
+    background-color: rgb(213, 227, 210);
 }
 
 footer{
@@ -74,17 +77,20 @@ footer{
 
 #frame{
     width:450px;
-    height: 8%;
+    height: 50px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
     background-color: #d2bebe;
     font-size: 15px;
-    resize: none;
     background-color: rgb(255, 255, 255);
+    padding: 30px;
 
 }
 
+.pad{
+    padding: 40px;
+}
 
 .card{
     background-color: aliceblue;
@@ -131,4 +137,52 @@ gap: 5px;
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
+}
+
+.box1{
+    width: 450px;
+    height: 100px;
+    text-align: center;
+  
+    font-weight: bold;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    display: block;
+}
+
+.box2{
+    width: 100px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box2:hover{
+    transform: scale(1.05);
+}
+
+.recept-container{
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.recept-container::-webkit-scrollbar{
+    height: 8px;
+
 }

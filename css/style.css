@@ -17,6 +17,8 @@
 header{
     grid-area: hd;
     background-color: rgb(49, 173, 132);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .h1{
@@ -173,16 +175,99 @@ span {
     transform: scale(1.05);
 }
 
-.recept-container{
+
+.recept-container {
     display: flex;
     overflow-x: auto;
     gap: 15px;
     padding: 10px;
     white-space: nowrap;
     scroll-behavior: smooth;
+    width: 100%;
+    min-width: 700px;
 }
 
 .recept-container::-webkit-scrollbar{
     height: 8px;
 
+}
+
+
+
+header ul li a{
+    color: rgb(123, 14, 14);
+}
+
+header ul li{
+    list-style: none;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+header ul{
+    display: flex;
+}
+
+#meny {
+    cursor: pointer;
+}
+
+ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul.show {
+    display: flex;
+}
+
+
+@media screen and (max-width:660){
+    body{
+        background-color: blue;
+    }
+    
+    header{
+      justify-content: center;
+    }
+
+ #meny{
+    height: 1px;
+    width: 2px;
+    /* position: absolute;
+    top: 4rem;
+    left: 90rem; */
+}
+
+#meny div{
+   border: 1px solid black;
+   margin: 0.3rem;
+   height: 5px;
+   width: 40px;
+   background-color: #000000;
+} 
+    
+    header ul{
+        display: block;
+        margin: 0;
+    }
+
+    header ul li{
+        text-align: center;
+    
+    }
+
+    header ul li:hover{
+        background-color: blue;
+    }
+    
+    header ul li a{
+        width: 100%;
+        height: 100%;
+    }
 }

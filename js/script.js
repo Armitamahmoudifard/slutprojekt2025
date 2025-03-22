@@ -1,6 +1,13 @@
-const meny= document.querySelector("#meny")
-meny.addEventListener('click',taggleMenu)
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".overlay").addEventListener("click", toggleMenu);
+    document.querySelector("#menu-icon").addEventListener("click", toggleMenu);
 
-document.getElementById("meny").addEventListener("click", function() {
-    document.querySelector("ul").classList.toggle("show");
+    function toggleMenu() {
+        let menu = document.querySelector(".sidebar");
+        menu.classList.toggle("active");
+
+        let layer = document.querySelector(".overlay");
+        layer.classList.toggle("active");
+    }
 });
+

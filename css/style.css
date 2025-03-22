@@ -1,5 +1,6 @@
+
 #container{
-    display: grid;
+ 
     height: 100vh;
     grid-template-rows: 1fr 2fr 1fr 1fr ;
     grid-template-areas: 
@@ -9,10 +10,8 @@
     'ft ft ft ft';
     margin: auto;
     background-color: rgb(54, 202, 153);
-    padding: px;
     gap: 5px;
 }
-
 
 header{
     grid-area: hd;
@@ -184,12 +183,25 @@ span {
     white-space: nowrap;
     scroll-behavior: smooth;
     width: 100%;
-    min-width: 700px;
+    min-width: 100%;
 }
 
 .recept-container::-webkit-scrollbar{
     height: 8px;
 
+}
+
+.recept-container::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.recept-container::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+.recept-container .card{
+    flex: 0 0 auto;
 }
 
 
@@ -207,27 +219,61 @@ header ul{
     display: flex;
 }
 
-#meny {
-    cursor: pointer;
+#meny{
+    height: 1px;
+    width: 2px;
+    /* position: absolute;
+    top: 4rem;
+    left: 90rem; */
 }
 
-ul {
+.overlay {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: white;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
-ul.show {
+.overlay.active {
+    display: block;
+}
+
+.menu-icon {
+    cursor: pointer;
     display: flex;
+    color: white;
+}
+.sidebar {
+    grid-area: header;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: #333;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 1000;
 }
 
+.sidebar.active {
+    right: 0;
+}
 
-@media screen and (max-width:660){
+#menu-icon div{
+   border: 1px solid black;
+   margin: 0.3rem;
+   height: 5px;
+   width: 40px;
+   background-color: #000000;
+
+} 
+
+@media (max-width:660px){
     body{
         background-color: blue;
     }
@@ -236,21 +282,18 @@ ul.show {
       justify-content: center;
     }
 
- #meny{
-    height: 1px;
-    width: 2px;
-    /* position: absolute;
-    top: 4rem;
-    left: 90rem; */
-}
+    .sidebar {
+        width: 250px;
+        left: -250px;
+    }
 
-#meny div{
-   border: 1px solid black;
-   margin: 0.3rem;
-   height: 5px;
-   width: 40px;
-   background-color: #000000;
-} 
+    main.shift {
+        margin-left: 250px;
+    }
+
+    .content-section article {
+        grid-template-areas: none;
+    }
     
     header ul{
         display: block;

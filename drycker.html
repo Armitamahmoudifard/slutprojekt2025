@@ -7,94 +7,75 @@
     
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
-    
+<body>  
     <div id="container">
         <header class="hd"> 
             <h1 class="h1">SmartBite</h1>
             <div> <a href="recept.se"> Recept</a></div>
             <div> <a href="drycker.html"> Drycker</a></div>
             <div> <a href="kundservice">kundservice</a></div>
-
-
-          <div id="meny">
+            
+            <div id="menu-icon">
+                <i class="material-icons">menu</i>
                 <div id="line1"></div>
                 <div id="line2"></div>
                 <div id="line3"></div>
             </div>
-
-
-        <ul>
-            <li><a href="Recept.se">Recept</a></li>
-            <li><a href="Drycker.se">Drycker</a></li>
-            <li><a href="Kundservice.se">Kundservice</a></li>
-        </ul>
-  
+            
         </header>
 
+        <div class="overlay"></div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="Recept.se">Recept</a></li>
+                <li><a href="Drycker.se">Drycker</a></li>
+                <li><a href="Kundservice.se">Kundservice</a></li>
+            </ul>
+        </div>
 
         <nav id="nv"> 
            <div class="pad">
-            <input type="text" id="frame" value="Search...">
-            <div class="box1">
-                <div class="box2"><span>Snabbt</span></div>
-                <div class="box2"><span>Lätt</span></div>
-                <div class="box2"><span>One pot</span></div>
+                <input type="text" id="frame" value="Search...">
+                <div class="box1">
+                    <div class="box2"><span>Snabbt</span></div>
+                    <div class="box2"><span>Lätt</span></div>
+                    <div class="box2"><span>One pot</span></div>
+                </div>
             </div>
-        </div>
         </nav>
-
-
         <section class="recept"> 
             <h2>Popular recepts:</h2>
-        <div class="recept-container">
-
-
-            <div class="card">
-                <img src="Untitled-3.jpg" alt="pasta recept">
-                <h3>Pasta</h3>
-                <button>kolla</button>
-            </div>
-            
-            <div class="card">
-                <img src="soppa.jpg" alt="soup recept">
-                <h3>Soup</h3>
-                <button> kolla</button>
-            </div>
-
-            <div class="card">
-            <img src="chikenrice-3.jpg" alt="chicken rice">
-            <h3>Cicken rice</h3>
-            <button> kolla </button>
-            </div>
-
-            <div class="card">
-                <img src="fish.jpg" alt="fish">
-                <h3>Fish</h3>
-                <button> kolla </button>
+            <div class="recept-container">
+                <div class="card">
+                    <img src="Untitled-3.jpg" alt="pasta recept">
+                    <h3>Pasta</h3>
+                    <button>kolla</button>
                 </div>
-
-
-            <div class="card">
-                <img src="mp.jpg" alt="fish">
-                <h3>Fish</h3>
-                <button> kolla </button>
+                <div class="card">
+                    <img src="soppa.jpg" alt="soup recept">
+                    <h3>Soup</h3>
+                    <button> kolla</button>
                 </div>
-
-
-        </div>
-
-            
+                <div class="card">
+                    <img src="chikenrice-3.jpg" alt="chicken rice">
+                    <h3>Cicken rice</h3>
+                    <button> kolla </button>
+                </div>
+                <div class="card">
+                    <img src="fish.jpg" alt="fish">
+                    <h3>Fish</h3>
+                    <button> kolla </button>
+                </div>
+                <div class="card">
+                    <img src="mp.jpg" alt="fish">
+                    <h3>Fish</h3>
+                    <button> kolla </button>
+                </div>
+            </div>
         </section>
-
-
         <footer>footer</footer>
         <script src="script.js"></script>
-
-
-
-
     </div>
 </body>
 </html>

@@ -36,12 +36,12 @@ nav{
 }
 
 a{
-    color: black;
+    color: rgb(105, 113, 108);
     text-decoration: dashed;
 }
 
 a:hover{
-    color: aliceblue;
+    color: rgb(13, 105, 56);
 }
 
 .hd{
@@ -194,17 +194,19 @@ span {
 }
 
 .box3{
-    width: 1500px;
-    height: 100px;
     text-align: center;
     font-weight: bold;
     margin:10px;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
+.pad2{
+    width: 100%;
+}
 .box4{
     width: 200px;
     height: 50px;
@@ -342,15 +344,14 @@ nav span[onclick="opennav()"] {
         display: none;
     }
     
-    nav #mysidenav [onclick="opennav()"] {
+    nav #mysidenav,
+    nav span[onclick="opennav()"] {
         display: block;
         position: absolute;
-        top: 50px;
+        top: 0px;
         right: 0px;
     }
-
- 
-
+    
     
 
     .hd {
@@ -401,10 +402,17 @@ nav span[onclick="opennav()"] {
     width: 300px;
     height: 300px;
 }
+#imgplate1:hover{
+    transform: scale(1.05);
+}
 
 #imgplate2{
     width: 340px;
-    height: 380px;
+    height: 360px;
+}
+
+#imgplate2:hover{
+    transform: scale(1.05);
 }
 
 #imgplate3{
@@ -412,6 +420,24 @@ nav span[onclick="opennav()"] {
     height: 350px;
 }
 
+#imgplate3:hover{
+    transform: scale(1.05);
+}
+
 #imgplate{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#bildrubrik{
+    display: flex;
+    justify-content: center;
+
+}
+
+#bildtext{
+    display: flex;
+   justify-content: center;
 }

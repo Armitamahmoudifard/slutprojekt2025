@@ -7,39 +7,34 @@
     
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
-    
+<body> 
     <div id="container">
         <header class="hd"> 
             <h1 class="h1">SmartBite</h1>
-            
-        <div class="desktop-menu">
-            <div> <a href="recept.html"> Recept</a></div>
-            <div> <a href="drycker.html"> Drycker</a></div>
-            <div> <a href="kundservice">kundservice</a></div>
-        </div>
 
-
-            <div id="menu-icon">
-                <div id="line1"></div>
-                <div id="line2"></div>
-                <div id="line3"></div>
+            <div class="top_bar">
+             <a href="recept.html"> Recept</a>
+             <a href="drycker.html"> Drycker</a>
+             <a href="kundservice.html">kundservice</a>
             </div>
-  
+        
+
         </header>
 
-        <div class="overlay"></div>
+        <nav>
+            <div id="mysidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+                <a href="recept.html">Recept</a>
+                <a href="drycker.html">Drycker</a>
+                <a href="kundservice.html">Kundservice</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="opennav()">&#9776; </span>
+        
 
-        <div class="sidebar">
-            <ul>
-                <li><a href="Recept.se">Recept</a></li>
-                <li><a href="Drycker.se">Drycker</a></li>
-                <li><a href="Kundservice.se">Kundservice</a></li>
-            </ul>
-        </div>
+        </nav>
+       
 
-        <nav id="nv"> 
+        <main id="mn"> 
            <div class="pad">
             <input type="text" id="frame" value="Search...">
             <div class="box1">
@@ -48,7 +43,7 @@
                 <div class="box2"><span>One pot</span></div>
             </div>
         </div>
-        </nav>
+    </main>
 
 
         <section class="recept"> 
@@ -100,4 +95,13 @@
 
     </div>
 </body>
+<script>
+    function opennav(){
+        document.getElementById("mysidenav").style.width= "250px" ;
+    }
+
+    function closenav(){
+        document.getElementById("mysidenav").style.width="0";
+    }
+</script>
 </html>

@@ -7,39 +7,34 @@
     
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
-    
+<body> 
     <div id="container">
         <header class="hd"> 
             <h1 class="h1">SmartBite</h1>
-            
-        <div class="desktop-menu">
-            <div> <a href="recept.html"> Recept</a></div>
-            <div> <a href="drycker.html"> Drycker</a></div>
-            <div> <a href="kundservice">kundservice</a></div>
-        </div>
 
-
-            <div id="menu-icon">
-                <div id="line1"></div>
-                <div id="line2"></div>
-                <div id="line3"></div>
+            <div class="top_bar">
+             <a href="recept.html"> Recept</a>
+             <a href="drycker.html"> Drycker</a>
+             <a href="kundservice.html">kundservice</a>
             </div>
-  
+        
+
         </header>
 
-        <div class="overlay"></div>
+        <nav>
+            <div id="mysidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+                <a href="recept.html">Recept</a>
+                <a href="drycker.html">Drycker</a>
+                <a href="kundservice.html">Kundservice</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="opennav()">&#9776; </span>
+        
 
-        <div class="sidebar">
-            <ul>
-                <li><a href="Recept.se">Recept</a></li>
-                <li><a href="Drycker.se">Drycker</a></li>
-                <li><a href="Kundservice.se">Kundservice</a></li>
-            </ul>
-        </div>
+        </nav>
+       
 
-        <nav id="nv"> 
+        <main id="mn2"> 
            <div class="pad">
             <input type="text" id="frame" value="Search...">
             <div class="box1">
@@ -48,29 +43,100 @@
                 <div class="box2"><span>One pot</span></div>
             </div>
         </div>
-        </nav>
+    </main>
 
 
-        <section class="recept"> 
-            <h2>Måltider:</h2>
+<section class="recept"> 
+    <div class="pad2">
+            <div class="box3">
+                <div class="box4"><span>Förätter <img id="imgikon"  src="förreätter.png" alt="förrättikon"></span></div>
+                <div class="box4"><span>Huvudrätter <img id="imgikon" src="huvudrätter.png" alt= huvudrättikon></span></div>
+                <div class="box4"><span>Efterrätter <img id="imgikon" src="efterrätter.png" alt="efterrättikon"></span></div>
+                <div class="box4"><span>Frukost <img id="imgikon" src="frukost.png" alt="frukostikon"></span></div>
+            </div>
+    </div>
+
+            <h2>Popular recepts:</h2>
         <div class="recept-container">
-            <div class="card2"> Förräter</div>
+            <div class="card">
+                <img src="Untitled-3.jpg" alt="pasta recept">
+                <h3>Pasta</h3>
+                <button>kolla</button>
+            </div>
             
-            <div class="card2">Huvudrätter</div>
+            <div class="card">
+                <img src="soppa.jpg" alt="soup recept">
+                <h3>Soup</h3>
+                <button> kolla</button>
+            </div>
 
-            <div class="card2"> Efterrätter</div>
+            <div class="card">
+            <img src="chikenrice-3.jpg" alt="chicken rice">
+            <h3>Cicken rice</h3>
+            <button> kolla </button>
+            </div>
 
-            <div class="card2">Frukost</div>
+            <div class="card">
+                <img src="fish.jpg" alt="fish">
+                <h3>Fish</h3>
+                <button> kolla </button>
+                </div>
+
+
+            <div class="card">
+                <img src="mp.jpg" alt="fish">
+                <h3>Fish</h3>
+                <button> kolla </button>
+                </div>
 
 
         </div>
 
+        <h2>Popular recepts:</h2>
+        <div class="recept-container">
+            <div class="card">
+                <img src="Untitled-3.jpg" alt="pasta recept">
+                <h3>Pasta</h3>
+                <button>kolla</button>
+            </div>
             
+            <div class="card">
+                <img src="soppa.jpg" alt="soup recept">
+                <h3>Soup</h3>
+                <button> kolla</button>
+            </div>
+
+            <div class="card">
+            <img src="chikenrice-3.jpg" alt="chicken rice">
+            <h3>Cicken rice</h3>
+            <button> kolla </button>
+            </div>
+
+            <div class="card">
+                <img src="fish.jpg" alt="fish">
+                <h3>Fish</h3>
+                <button> kolla </button>
+                </div>
+
+
+            <div class="card">
+                <img src="mp.jpg" alt="fish">
+                <h3>Fish</h3>
+                <button> kolla </button>
+                </div>
+
+
+        </div>
+    <div id="imgplate">
+        <img id="imgplate1" src="plate 1 Background Removed.png" alt="plate1">
+        <img id="imgplate2" src="plate2 Background Removed.png" alt="plate2">
+        <img id="imgplate3" src="plate3 Background Removed.png" alt="plate3">
+    </div>
         </section>
 
 
         <footer>footer</footer>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
 
 
 

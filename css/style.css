@@ -2,7 +2,7 @@
 #container{
  
     height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr 1fr ;
+    grid-template-rows: 1fr 1.5fr 1fr 1fr ;
     grid-template-areas: 
     'hd hd hd hd'
     'nv nv nv nv'
@@ -16,14 +16,14 @@
 
 header{
     grid-area: hd;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(232, 246, 241);
     display: flex;
     
 }
 
 nav{
     grid-area: nv;
-    background-color: rgb(155, 211, 190);
+    background-color: rgb(232, 246, 241);
 }
 
 .h1{
@@ -52,7 +52,7 @@ a:hover{
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    position: relative; /* Added for hamburger positioning */
+    position: relative; 
 
 }
 
@@ -76,12 +76,12 @@ main{
 
 section{
     grid-area: sec;
-    background-color: rgb(155, 211, 190);
+    background-color: rgb(232, 246, 241);
 }
 
 footer{
     grid-area: ft;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(232, 246, 241);
 }
 
 #mn{
@@ -93,12 +93,18 @@ footer{
     align-items: center;
 }
 
+#mn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #frame{
     width:450px;
-    height: 50px;
+    height: 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #d2bebe;
     font-size: 15px;
     background-color: rgb(255, 255, 255);
@@ -109,6 +115,7 @@ footer{
 .pad{
     padding: 40px;
 }
+
 
 .card{
     background-color: aliceblue;
@@ -161,7 +168,6 @@ justify-content: flex-start;
     width: 450px;
     height: 100px;
     text-align: center;
-  
     font-weight: bold;
     margin: 20px auto;
     border-radius: 10px;
@@ -175,8 +181,8 @@ span {
 }
 
 .box2{
-    width: 100px;
-    height: 80px;
+    width: 90px;
+    height: 50px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
     margin: 20px auto;
@@ -187,6 +193,30 @@ span {
 
 }
 
+.box3{
+    width: 1500px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin:10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box4{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(104, 105, 105);
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .box2:hover{
     transform: scale(1.05);
 }
@@ -195,8 +225,8 @@ span {
 .recept-container {
     display: flex;
     overflow-x: auto;
-    gap: 15px;
-    padding: 10px;
+    gap: 0px;
+    padding:0px;
     white-space: nowrap;
     scroll-behavior: smooth;
     width: 100%;
@@ -209,7 +239,7 @@ span {
 }
 
 .recept-container::-webkit-scrollbar-thumb{
-    background-color: #888;
+    background-color: #c4c4c4;
     border-radius: 4px;
 }
 
@@ -244,7 +274,7 @@ header ul{
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -312,13 +342,15 @@ nav span[onclick="opennav()"] {
         display: none;
     }
     
-    nav #mysidenav,
-    nav span[onclick="opennav()"] {
+    nav #mysidenav [onclick="opennav()"] {
         display: block;
         position: absolute;
-        top: 0px;
-        right: 20px;
+        top: 50px;
+        right: 0px;
     }
+
+ 
+
     
 
     .hd {
@@ -333,7 +365,6 @@ nav span[onclick="opennav()"] {
     position: fixed;
     z-index: 0;
     top: 0;
-    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -359,4 +390,28 @@ nav span[onclick="opennav()"] {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+#imgikon{
+    width: 30px;
+    height: 30px;
+}
+
+#imgplate1{
+    width: 300px;
+    height: 300px;
+}
+
+#imgplate2{
+    width: 340px;
+    height: 380px;
+}
+
+#imgplate3{
+    width: 350px;
+    height: 350px;
+}
+
+#imgplate{
+    display: flex;
 }

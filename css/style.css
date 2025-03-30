@@ -77,6 +77,7 @@ main{
 section{
     grid-area: sec;
     background-color: rgb(232, 246, 241);
+
 }
 
 footer{
@@ -125,16 +126,19 @@ footer{
     text-align: center;
     padding: 10px;
     width: 200px;
-    height: 250px;
+    height: 300px;
     box-shadow: 0 2px 5px black;
 }
 
 
 .card img{
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 200px;
     border-bottom: 1px solid black ;
     padding-bottom: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px ;
+    object-fit: cover;
 }
 
 .card:hover{
@@ -162,6 +166,9 @@ gap: 5px;
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
+max-width: 1000px;
+position: relative;
+margin: auto;
 }
 
 .box1{
@@ -339,7 +346,7 @@ nav span[onclick="opennav()"] {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .top_bar {
         display: none;
     }
@@ -348,14 +355,17 @@ nav span[onclick="opennav()"] {
     nav span[onclick="opennav()"] {
         display: block;
         position: absolute;
-        top: 0px;
+        top: 50px;
         right: 0px;
     }
     
     
-
     .hd {
         padding-right: 60px; 
+    }
+
+    .prev, .next,.text {
+        font-size: 15px
     }
 }
 
@@ -440,4 +450,89 @@ nav span[onclick="opennav()"] {
 #bildtext{
     display: flex;
    justify-content: center;
+}
+
+
+
+.mySlides {
+    display: none
+}
+
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+width: 300px;
+position: relative;
+align-items: center;
+
+ 
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  padding: 16px;
+  margin-top: -250px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

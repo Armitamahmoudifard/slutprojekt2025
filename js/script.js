@@ -41,19 +41,19 @@ document.addEventListener('DOMContentLoaded', function() {
   const nextBtn = document.getElementById('plate-next');
   let currentIndex = 0;
   let itemWidth = items[0].offsetWidth;
-  const gap = 20; // Motsvarar gap-värdet i CSS
+  const gap = 20; 
   
   function updateCarousel() {
       if (window.innerWidth <= 500) {
-          // Mobilvisning - karusell
+        
           const offset = currentIndex * (itemWidth + gap);
           wrapper.style.transform = `translateX(-${offset}px)`;
           
-          // Visa/dölj pilar baserat på position
+       
           prevBtn.style.display = currentIndex === 0 ? 'none' : 'block';
           nextBtn.style.display = currentIndex >= items.length - 1 ? 'none' : 'block';
       } else {
-          // Desktopvisning - visa alla sida vid sida
+         
           wrapper.style.transform = 'translateX(0)';
       }
   }
@@ -77,10 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
   
-  // Initialisering
+
   updateCarousel();
   
-  // Hantera fönsterstorleksändringar
+
   window.addEventListener('resize', function() {
       if (window.innerWidth > 500) {
           currentIndex = 0;
@@ -88,3 +88,5 @@ document.addEventListener('DOMContentLoaded', function() {
       handleResize();
   });
 });
+
+

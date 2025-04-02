@@ -113,6 +113,10 @@ footer{
     align-items: center;
 }
 
+#mnkund{
+    background-color: rgb(232, 246, 241);;
+}
+
 #mn2{
     display: flex;
     justify-content: center;
@@ -473,6 +477,9 @@ nav span[onclick="opennav()"] {
     padding: 0 40px;
 }
   
+.metod{
+    flex-direction: column;
+}
   
 }
 
@@ -719,3 +726,96 @@ align-items: center;
 .plate-nav {
     display: none;
 }
+
+#box5{
+    background-color:rgb(232, 246, 241);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
+    width: 1370px;
+
+}
+
+#mn2{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block;
+}
+
+h2{
+    color: #228849;
+    margin: 1.5rem 0 1rem; 
+}
+
+.faqsection{
+    cursor: pointer;
+    margin: 1re, 0;
+}
+
+.faqfråga{
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+.faqsvar{
+    display: none;
+    padding: 0.5rem 0;
+}
+
+.faqsvar.show{
+    display: block;
+}
+
+.kontaktmetoder{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.metod{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+form div{
+    margin-bottom: 1rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+button{
+    color: rgb(7, 7, 7);
+    background-color: #a8a8a8;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.confirmation{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: rgb(200, 255, 200);
+    font-weight: bold;
+    display: none;
+}
+
+

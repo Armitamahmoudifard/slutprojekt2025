@@ -39,7 +39,7 @@
 
         <main id="mnkund">
             <h2>Kundservice</h2>
-            <p>Vi är här för att hjälpa dig med alla frågor.</p> 
+            <p id="pkund">Vi är här för att hjälpa dig med alla frågor.</p> 
         </main>
 
 
@@ -48,13 +48,13 @@
     <div id="faq-section" class="faqsection">
         <h3>Vanliga frågor</h3>
     <div class="faq">
-        <h4 class="faqfråga">Kan jag spara recept för senare?</h4>
+        <h4 class="faqquestion">Kan jag spara recept för senare?</h4>
         <div class="faqsvar">
             <p>Ja, när du är inloggad kan du klicka på "Spara recept" under varje recept. Dina sparade recept finns sedan under "Mina sparade recept" i din profil.</p>
         </div>
     </div>
     <div class="faq">
-        <h4 class="faqfråga">Hur delar jag recept med vänner?</h4>
+        <h4 class="faqquestion">Hur delar jag recept med vänner?</h4>
         <div class="faqsvar">
             <p>Varje recept har en "Dela"-knapp där du kan välja att dela via email eller sociala medier. Du kan också kopiera en direktlänk till receptet.</p>
         </div>
@@ -90,37 +90,79 @@
 
             <div>
                 <label for="medelande">Medelande</label>
-                <textarea id="medelande" name="medelande" required></textarea>
+                <textarea class="medelande" name="medelande" required></textarea>
             </div>
 
             <button type="submit">Skicka</button>
             <div id="confirm" class="confirmation"></div>
         </form>
     </div>
-
-        </section>
-
-
-        <section id="section2">
-            <div id="feedbacksec" class="feedback">
-                <h3>Återkoppling</h3>
-                <p>Berätta vad du tycker om vår tjänst:</p>
-            
-                <form id="feedbackform">
-                    <div>
-                        <label for="feedbackmedelande">Din återkoppling:</label>
-                        <textarea id="feedbackmedelande" name="feedbackmedelande" required></textarea>
-                    </div>
-            
-                    <button type="submit">Skicka</button>
-                    <div id="feedbackconfirm" class="confirmation"></div>
-                </form>
+    <div id="feedbacksec" class="feedback">
+        <h3>Återkoppling</h3>
+        <p>Berätta vad du tycker om vår tjänst:</p>
+    
+        <form id="feedbackform">
+            <div>
+                <label for="feedbackmedelande">Din återkoppling:</label>
+                <textarea class="medelande" name="medelande" required></textarea>
             </div>
+    
+            <button type="submit">Skicka</button>
+            <div id="feedbackconfirm" class="confirmation"></div>
+        </form>
+    </div>
 
         </section>
 
 
-        <footer>footer</footer>
+
+        <footer> <div class="footer-container">
+            <div class="footer-section">
+                <h3>Följ oss på sociala medier</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-link">
+                        <img src="2021_Facebook_icon.svg.png" alt="Facebook" class="social-icon">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link active">
+                        <img src="instagram-logo-instagram-social-media-icon-free-png.webp" alt="Instagram" class="social-icon">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="174863.png" alt="Pinterest" class="social-icon">
+                        <span>Pinterest</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="1384060.png" alt="YouTube" class="social-icon">
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="divider"></div>
+    
+            <div class="footer-section">
+                <h3>Om SmartBite</h3>
+                <ul>
+                    <li><a href="#">Läs användarvillkor</a></li>
+                    <li><a href="#">Kontakta SmartBite</a></li>
+                    <li>Redaktörer: Lina Björn</li>
+                    <li>Ansvarig utgivare: Armita Mahmoudifard</li>
+                
+                </ul>
+            </div>
+    
+            <div class="divider"></div>
+    
+            <div class="footer-section">
+                <h3>Om cookies</h3>
+                <ul>
+                    <li><a href="#">Cookie-inställningar</a></li>
+                    <li><a href="#">Personuppgiftspolicy</a></li>
+                    <li><a href="#">Annonsera på smartbite.se</a></li>
+                </ul>
+            </div>
+        </div></footer>
         <script src="js/script.js"></script>
 
 

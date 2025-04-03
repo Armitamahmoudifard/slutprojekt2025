@@ -5,7 +5,7 @@ function opennav(){
 function closenav(){
     document.getElementById("mysidenav").style.width="0";
 }
-
+/* Det här delen plockade jag från w3schools */
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -33,17 +33,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const questions = document.querySelectorAll('.faqquestion');
 
-
-
-document.addEventListener('DOMContentLoaded', function(){
-  const questions = document.querySelectorAll('.faqfråga');
-
-  questions.forEach(questions=>{
-    fråga.addEventListener('click',()=>{
+  questions.forEach(question => {
+    question.addEventListener('click', () => {
       const answer = question.nextElementSibling;
       answer.classList.toggle('show');
     });
   });
-})
-
+});

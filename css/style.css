@@ -117,7 +117,7 @@ footer{
     background-color: rgb(232, 246, 241);;
 }
 
-#mn2{
+#mn1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,9 +182,7 @@ footer{
 
 }
 
-.card button:hover{
-    background-color: rgb(95, 192, 168);
-}
+
 
 
 .card-tid{
@@ -218,15 +216,14 @@ h3{
 }
 
 .recept{
-    margin: 0;
-    padding: 15px;
+  
     gap: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     position: relative;
-    margin: auto;
+
     }
 
     .recept2{
@@ -256,6 +253,7 @@ h3{
 
 span {
     display: block;
+
 }
 
 .box2{
@@ -314,6 +312,7 @@ span {
     min-width: 100%;
 }
 
+
 .recept-container::-webkit-scrollbar{
     height: 8px;
 
@@ -330,6 +329,20 @@ span {
 
 .recept-container .card{
     flex: 0 0 auto;
+}
+
+#plaplates-container::-webkit-scrollbar{
+    height: 8px;
+
+}
+
+#plates-container::-webkit-scrollbar-thumb{
+    background-color: #c4c4c4;
+    border-radius: 4px;
+}
+
+#plates-container::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
 }
 
 
@@ -436,46 +449,33 @@ nav span[onclick="opennav()"] {
         padding-right: 60px; 
     }
 
-    .prev, .next,.text {
-        font-size: 15px
-    }
 
-    .plate-nav {
-        display: flex;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 100;
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #plate-prev {
-        left: 5px;
+    .plate-item {
+        min-width: 85%;  
+        margin: 0 5px;   
+        padding: 10px;  
     }
     
-    #plate-next {
-        right: 5px;
+    #plates-wrapper {
+        gap: 5px;        
+        padding: 0 5px; 
     }
-
-    .plate-nav {
-    display: none;
-}
-.plate-item {
-    min-width: 80%;
-    margin: 0 10%;
-
-}
-  
-#plates-wrapper {
-    padding: 0 40px;
-}
+    
+    .imgplate {
+        width: 95%;      
+        height: auto;    
+        margin: 5px;    
+    }
+    
+    .bildrubrik h3 {
+        font-size: 1.1rem; 
+        margin: 5px 0;
+    }
+    
+    .bildtext p {
+        padding: 0 5px;  
+        font-size: 0.8rem;
+    }
   
 .metod{
     flex-direction: column;
@@ -517,30 +517,32 @@ nav span[onclick="opennav()"] {
     margin-left: 50px;
 }
 
-#imgikon{
-    width: 30px;
-    height: 30px;
+.imgikon{
+    width: 25px;
+    height: 25px;
+    align-items: center;
 }
 
-#imgplate{
+.imgplate{
     display: flex;
     justify-content: center;
     width: 250px;
-    height: 220px;
+    height: 250px;
+    margin: 15px;
 }
 
-#imgplate:hover{
+.imgplate:hover{
     transform: scale(1.05);
 }
 
 
-#bildrubrik{
+.bildrubrik{
     display: flex;
     justify-content: center;
 
 }
 
-#bildtext{
+.bildtext{
     display: flex;
    justify-content: center;
 }
@@ -638,20 +640,17 @@ align-items: center;
 
 #plates-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: auto;  
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding-top: 50px;
+    max-width: 1000px;
+    -webkit-overflow-scrolling: touch; 
 }
 
 #plates-wrapper {
     display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: center;
+    flex-wrap: nowrap; 
+    gap: 10px;
+
 }
 
 .plate-item {
@@ -674,6 +673,7 @@ align-items: center;
     margin: 20px 10px;
   
 }
+
 
 #bildrubrik h3 {
     margin: 10px 0;
@@ -727,7 +727,26 @@ align-items: center;
     display: none;
 }
 
-#box5{
+
+#faq-section{
+    background-color:rgb(232, 246, 241);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
+    width: 1370px;
+
+}
+#kontaktsec{
+    background-color:rgb(232, 246, 241);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
+    width: 1370px;
+
+}
+#feedbacksec{
     background-color:rgb(232, 246, 241);
     padding: 1.5rem;
     margin: 1.5rem 0;
@@ -746,7 +765,7 @@ align-items: center;
 
 h2{
     color: #228849;
-    margin: 1.5rem 0 1rem; 
+    margin: 3rem 0 0.1rem; 
 }
 
 .faqsection{
